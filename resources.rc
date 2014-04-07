@@ -1,0 +1,141 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include <os2.h>
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+// #include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+MENU ID_WINDOW PRELOAD
+{
+   SUBMENU "E~xit", IDM_EXIT, MIS_TEXT
+   {
+      MENUITEM "E~xit\tF3", IDM_EXITPROG, MIS_TEXT
+      MENUITEM "~Resume", IDM_RESUME, MIS_TEXT
+   }
+   SUBMENU "~Help", IDM_HELP, MIS_TEXT
+   {
+      MENUITEM "~Instructions", IDM_HELPINSTRUCTIONS, MIS_TEXT
+      MENUITEM SEPARATOR
+      MENUITEM "~Product Information", IDM_HELPABOUT, MIS_TEXT
+   }
+}
+
+STRINGTABLE PRELOAD
+{
+   IDS_APPNAME,      "CANNON"
+   IDS_NOREGISTER,   "Window class could not be registered."
+   IDS_NOSTDWINDOWS, "The standard windows could not be created."
+   IDS_NOTHREAD,     "The drawing thread could not be created."
+   IDS_SEMERROR,     "A semaphore error occurred."
+}
+
+ACCELTABLE ID_WINDOW PRELOAD
+   {
+   VK_F1, IDM_HELPINSTRUCTIONS, VIRTUALKEY
+   VK_F3, IDM_EXITPROG, VIRTUALKEY
+   }
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLGTEMPLATE IDD_DEMODIALOG LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Magnus Effect Example", IDD_DEMODIALOG, 0, 0, 448, 153,
+            FS_NOBYTEALIGN | WS_VISIBLE, FCF_TITLEBAR
+    PRESPARAMS PP_FONTNAMESIZE, "8.Helvetica Bold"
+
+BEGIN
+    DEFPUSHBUTTON   "Close",ID_CLOSE,17,20,50,14
+    EDITTEXT        "",IDC_V0,29,140,40,8,ES_AUTOSCROLL
+    EDITTEXT        "",IDC_RADIUS,29,120,40,8,ES_AUTOSCROLL
+    LTEXT           "Vo",IDC_STATIC,17,140,10,8
+    LTEXT           "radius",IDC_STATIC,7,120,20,8
+    PUSHBUTTON      "Go",IDC_FIRE,17,60,50,14
+    PUSHBUTTON      "Refresh",IDC_REFRESH,17,40,50,14
+    EDITTEXT        "",IDC_M,29,100,39,8,ES_AUTOSCROLL
+    LTEXT           "mass",IDC_STATIC,9,100,18,8
+    EDITTEXT        "",IDC_SPIN,29,80,39,8,ES_AUTOSCROLL
+    LTEXT           "spin",IDC_STATIC,13,80,14,8
+END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE
+BEGIN
+    IDD_DEMODIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 441
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+
